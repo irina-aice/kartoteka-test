@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test </title>
+
+  <script type="module">
+    document.documentElement.classList.remove('no-js');
+    document.documentElement.classList.add('js');
+  </script>
+
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="page_wrapper">
+    <header>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a class="nav__link">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Константин <br>Константиновский</a>
+          </li>
+        </ul>
+        <ul class="nav__list nav__list__user">
+          <li class="nav__item">
+            <a class="nav__link">Мероприятия</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Сотрудники</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Заметки</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Статистика</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Удобрения</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link">Погода</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--current">Организации</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main__helper">
+        <h2 class="main__header">Организации</h2>
+        <div class="main__inner">
+          <form class="form">
+            <label class="visually-hidden" for="search-area">Поиск</label>
+            <input class="form__input" type="search" name="search-area" id="search-area" placeholder="Поиск организации по ИНН или ОГРН">
+            <button class="form__button button" type="submit">Найти</button>
+          </form>
+          <button class="button button--add" type="button">
+            <span class="visually-hidden">Добавить</span>
+          </button>
+          <button class="button button--settings" type="button">
+            <span class="visually-hidden">Настройки</span>
+          </button>
+        </div>
+      </div>
+      <table class="table">
+        <thead class="table__column-head">
+        <tr>
+          <th scope="col">Наименование организации</th>
+          <th scope="col">ИНН</th>
+          <th scope="col">Руководитель</th>
+          <th scope="col">Адрес</th>
+          <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody class="table__body">
+        <tr>
+          <th scope="row">Фонд "Сколково"</th>
+          <td class="table__cell">7706412961</td>
+          <td class="table__cell">Балега Юрий Юрьевич</td>
+          <td class="table__cell">обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
+          <td class="table__cell"></td>
+        </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+
+</body>
+</html>

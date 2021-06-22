@@ -1,0 +1,25 @@
+.nav {
+  min-width: 241px;
+  height: 100%;
+  background-color: $darker-violet;
+}
+
+.nav__list {
+  @include reset-list;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav__link {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 6px 10px 32px;
+  font-size: 14px;
+  line-height: 19px;
+  color: $white;
+
+  &--current {
+    background: $blue-gradient;
+    border-radius: 10px;
+  }
+}

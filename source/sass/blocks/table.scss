@@ -1,0 +1,25 @@
+.table {
+  margin-left: 40px;
+  margin-right: 79px;
+  padding: 17px 0 11px 10px;
+  background-color: $dark-violet;
+  box-shadow: 7px 7px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 18px;
+}
+
+.table__column-head {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $white;
+}
+
+.table__cell {
+  border-collapse: collapse;
+  border-bottom: 0.5px solid $light-black;
+  border-left: 0.5px solid $light-black;
+}
+
+.table__cell:not(:last-child) {
+  padding-left: 30px;
+}
