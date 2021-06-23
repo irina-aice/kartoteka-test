@@ -1,9 +1,11 @@
 .button {
   margin: 0;
   border: 0;
+  cursor: pointer;
 
   &--add,
   &--settings {
     margin-left: 23px;
+    background-color: $violet;
   }
 }
