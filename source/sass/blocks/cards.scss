@@ -1,0 +1,32 @@
+.cards {
+  display: flex;
+  padding-left: 40px;
+  padding-right: 80px;
+}
+
+.cards__wrapper {
+  background-color: $dark-violet;
+  box-shadow: 7px 7px 8px $lighter-black;
+  border-radius: 18px;
+
+  &--structure {
+    max-width: 525px;
+    margin-right: 28px;
+  }
+}
+
+.cards__helper {
+  max-width: 526px;
+}
+
+.cards__title {
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: 700;
+  color: $white;
+}
+
+.cards__list {
+  @include reset-list;
+  color: $white;
+}

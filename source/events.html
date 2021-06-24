@@ -36,7 +36,7 @@
         </ul>
         <ul class="nav__list">
           <li class="nav__item">
-            <a class="nav__link" href="events.html">
+            <a class="nav__link nav__link--current">
               <svg class="nav__icon" width="24" height="24">
                 <use xlink:href="img/sprite.svg#icon-events"></use>
               </svg>
@@ -84,7 +84,7 @@
             </a>
           </li>
           <li class="nav__item">
-            <a class="nav__link nav__link--current">
+            <a class="nav__link" href="organizations.html">
               <svg class="nav__icon" width="24" height="24">
                 <use xlink:href="img/sprite.svg#icon-organizations"></use>
               </svg>
@@ -96,13 +96,12 @@
     </header>
     <main class="main">
       <div class="main__helper">
-        <h2 class="main__header">Организации</h2>
+        <div class="main__header-wrapper">
+        <h2 class="main__header">Карточка мероприятия</h2>
+        <p class="main__status">Обновлено</p>
+        </div>
         <div class="main__inner">
-          <form class="form">
-            <label class="visually-hidden" for="search-area">Поиск</label>
-            <input class="form__input" type="search" name="search-area" id="search-area" placeholder="Поиск организации по ИНН или ОГРН">
-            <button class="form__button button" type="submit">Найти</button>
-          </form>
+          <button class="form__button button" type="submit">Материалы проверки</button>
           <button class="button button--add" type="button">
             <span class="visually-hidden">Добавить</span>
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -124,35 +123,101 @@
           </button>
         </div>
       </div>
-      <div class="table-wrapper">
-        <table class="table">
-          <thead>
-          <tr>
-            <th scope="col">Наименование организации</th>
-            <th scope="col">ИНН</th>
-            <th scope="col">Руководитель</th>
-            <th scope="col">Адрес</th>
-            <th scope="col"></th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th class="table__icon table__icon--orange" scope="row">Фонд "Сколково"</th>
-            <td>7706412961</td>
-            <td>Балега Юрий Юрьевич</td>
-            <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
-            <td></td>
-          </tr>
-          <tr>
-            <th class="table__icon table__icon--orange" scope="row">Фонд "Сколково"</th>
-            <td>7706412961</td>
-            <td>Балега Юрий Юрьевич</td>
-            <td>обл. Московская, г. Одинцово, д. Сколково, ул. Новая, 100</td>
-            <td></td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
+      <section class="cards">
+        <div class="cards__wrapper cards__wrapper--structure">
+          <h3 class="cards__title">Структура предприятия</h3>
+          <ul class="cards__list">
+            <li class="cards__item card">
+              <h3 class="card__title">ФГБУН Институт нанотехнологий микроэлектроники РАН</h3>
+              <p class="card__details">Идёт процесс ликвидации с 25.10.2019 по 10.10.2020</p>
+              <p class="card__head">Директор: Сауров Александр Николаевич</p>
+              <p class="card__document">Трудовой контракт с 25.03.2017 по 25.03.2023</p>
+              <p class="card__contacts">119991, Москва, Ленинский просп., 32а</p>
+              <p class="card__contacts">123 сотрудника</p>
+            </li>
+            <li class="cards__item card">
+              <h3 class="card__title">ФГБУН Институт нанотехнологий микроэлектроники РАН</h3>
+              <p class="card__details">Идёт процесс ликвидации с 25.10.2019 по 10.10.2020</p>
+              <p class="card__head">Директор: Сауров Александр Николаевич</p>
+              <p class="card__document">Трудовой контракт с 25.03.2017 по 25.03.2023</p>
+              <p class="card__contacts">119991, Москва, Ленинский просп., 32а</p>
+              <p class="card__contacts">123 сотрудника</p>
+              <h3 class="card__title">Наименование организации до реорганизации</h3>
+              <p class="card__old-title">ФГБУН науки Объединенный институт высоких температур РАН</p>
+              <p class="card__old-title">ФГБУН Институт проблем управления сложными системами РАН</p>
+            </li>
+            <li class="cards__item card">
+              <h3 class="card__title">ФГБУН Институт нанотехнологий микроэлектроники РАН</h3>
+              <p class="card__details">Идёт процесс ликвидации с 25.10.2019 по 10.10.2020</p>
+              <p class="card__head">Директор: Сауров Александр Николаевич</p>
+              <p class="card__document">Трудовой контракт с 25.03.2017 по 25.03.2023</p>
+              <p class="card__contacts">119991, Москва, Ленинский просп., 32а</p>
+              <p class="card__contacts">123 сотрудника</p>
+            </li>
+          </ul>
+        </div>
+        <div class="cards__helper">
+          <div class="cards__wrapper">
+            <ul class="cards__document document">
+              <li class="document__item">
+                <p class="document__text">Справка проверки</p>
+                <button class="button button--action" type="button">Сформировать</button>
+              </li>
+              <li class="document__item">
+                <p class="document__text">Акт проверки</p>
+                <button class="button button--action" type="button">Сформировать</button>
+              </li>
+              <li class="document__item">
+                <p class="document__text">Схема проверки</p>
+                <button class="button button--action" type="button">Сформировать</button>
+              </li>
+            </ul>
+          </div>
+          <div class="cards__wrapper">
+            <form class="form">
+              <fieldset class="form__fieldset">
+                <label class="form__label" for="text-area">Решение о проведении поверки</label>
+                <textarea class="form__input" id="text-area" name="text-area" placeholder="Введите текст"></textarea>
+              </fieldset>
+              <fieldset class="form__fieldset">
+                <ul class="form__list">
+                  <li class="form__item">
+                    <label class="form__label" for="organization">Организация</label>
+                    <input class="form__input" name="organization" id="organization" type="text" placeholder="ООО “РесерчХолд”">
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label" for="type">Вид проверки</label>
+                    <select class="form__select" id="type">
+                      <option>Плановая</option>
+                    </select>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label" for="form">Форма проверки</label>
+                    <select class="form__select" id="form">
+                      <option>Выездная</option>
+                    </select>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label" for="method">Метод проверки</label>
+                    <select class="form__select" id="method">
+                      <option>Фактическая</option>
+                    </select>
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label" for="time">Сроки проведения проверки</label>
+                    <input class="form__input" id="time" type="text" placeholder="02.08.2020 - 05.08.2020 ">
+                  </li>
+                  <li class="form__item">
+                    <label class="form__label" for="place">Место проведения проверки</label>
+                    <input class="form__input" id="place" type="text" placeholder="г. Москва, Лененский пр-т 178, к4">
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="button button--action" type="submit">Написать</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
   </div>
 

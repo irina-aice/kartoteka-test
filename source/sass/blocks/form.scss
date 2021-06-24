@@ -1,3 +1,17 @@
+.form__fieldset {
+  border: 0;
+}
+
+.form__list {
+  @include reset-list;
+}
+
+.form__label {
+  font-size: 14px;
+  line-height: 19px;
+  color: $white;
+}
+
 .form__input {
   min-width: 465px;
   margin-right: 26px;
@@ -9,6 +23,16 @@
   background-color: $deep-violet;
   border: 0;
   border-radius: 5px;
+}
+
+.form__select {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  color: $grey;
+  background-color: $deep-violet;
+  border-radius: 5px;
+  border: 0;
 }
 
 .form__button {
