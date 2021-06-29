@@ -3,6 +3,14 @@
   padding-left: 40px;
   padding-right: 80px;
   padding-bottom: 89px;
+
+  &--index {
+    flex-direction: column;
+  }
+}
+
+.cards__block {
+  display: flex;
 }
 
 .cards__wrapper {

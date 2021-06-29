@@ -34,6 +34,10 @@
     background: $blue-gradient;
     border-radius: 10px;
   }
+
+  &--current-main {
+    color: $blue;
+  }
 }
 
 .nav__icon {
@@ -49,4 +53,8 @@
 
 .nav__link--current .nav__icon {
   color: $darker-violet;
+}
+
+.nav__link--current-main .nav__icon {
+  color: $blue;
 }
