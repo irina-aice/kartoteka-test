@@ -2,6 +2,7 @@
   display: flex;
   padding-left: 40px;
   padding-right: 80px;
+  padding-bottom: 89px;
 }
 
 .cards__wrapper {
@@ -20,6 +21,8 @@
 }
 
 .cards__title {
+  margin: 0;
+  padding: 25px 20px;
   font-size: 14px;
   line-height: 19px;
   font-weight: 700;

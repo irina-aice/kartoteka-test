@@ -10,7 +10,12 @@
   }
 
   &--action {
+    padding: 7px 30px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
     color: $blue;
     background-color: $deeper-violet;
+    border-radius: 6px;
   }
 }

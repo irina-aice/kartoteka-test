@@ -1,21 +1,44 @@
+.form {
+  margin-top: 26px;
+}
+
 .form__fieldset {
+  margin: 0;
+  padding: 26px 30px;
   border: 0;
+
+  &--testing {
+    border-bottom: 1px solid $dark-blue;
+  }
+
+  &--information {
+    padding-bottom: 0;
+  }
 }
 
 .form__list {
   @include reset-list;
 }
 
+.form__item {
+  margin-bottom: 17px;
+}
+
 .form__label {
+  display: inline-block;
+  margin-bottom: 6px;
   font-size: 14px;
   line-height: 19px;
   color: $white;
+
+  &--select {
+    width: 100%;
+  }
 }
 
 .form__input {
   min-width: 465px;
-  margin-right: 26px;
-  padding: 8px 8px 9px 16px;
+  padding: 7px 14px 6px 11px;
   font-size: 14px;
   line-height: 19px;
   font-weight: 300;
@@ -23,9 +46,17 @@
   background-color: $deep-violet;
   border: 0;
   border-radius: 5px;
+
+  &--time {
+    min-width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .form__select {
+  min-width: 303px;
+  padding: 7px 14px 6px 11px;
   font-weight: 300;
   font-size: 14px;
   line-height: 19px;
@@ -42,4 +73,10 @@
   line-height: 22px;
   color: $deeper-violet;
   border-radius: 6px;
+}
+
+.form__button-wrapper {
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 24px;
 }

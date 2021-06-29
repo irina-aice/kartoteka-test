@@ -14,7 +14,7 @@
 </head>
 <body>
   <div class="page_wrapper">
-    <header>
+    <aside>
       <nav class="nav">
         <ul class="nav__list nav__list--user">
           <li class="nav__item">
@@ -93,12 +93,12 @@
           </li>
         </ul>
       </nav>
-    </header>
+    </aside>
     <main class="main">
       <div class="main__helper">
         <div class="main__header-wrapper">
-        <h2 class="main__header">Карточка мероприятия</h2>
-        <p class="main__status">Обновлено</p>
+          <h2 class="main__header">Карточка мероприятия</h2>
+          <p class="main__status">Обновлено</p>
         </div>
         <div class="main__inner">
           <button class="form__button button" type="submit">Материалы проверки</button>
@@ -127,32 +127,32 @@
         <div class="cards__wrapper cards__wrapper--structure">
           <h3 class="cards__title">Структура предприятия</h3>
           <ul class="cards__list">
-            <li class="cards__item card">
+            <li class="cards__item card card--open-arrow">
               <h3 class="card__title">ФГБУН Институт нанотехнологий микроэлектроники РАН</h3>
               <p class="card__details">Идёт процесс ликвидации с 25.10.2019 по 10.10.2020</p>
               <p class="card__head">Директор: Сауров Александр Николаевич</p>
               <p class="card__document">Трудовой контракт с 25.03.2017 по 25.03.2023</p>
-              <p class="card__contacts">119991, Москва, Ленинский просп., 32а</p>
-              <p class="card__contacts">123 сотрудника</p>
+              <p class="card__contacts card__contacts--address">119991, Москва, Ленинский просп., 32а</p>
+              <p class="card__contacts card__contacts--staff">123 сотрудника</p>
             </li>
-            <li class="cards__item card">
+            <li class="cards__item card card--close-arrow">
               <h3 class="card__title">ФГБУН Институт нанотехнологий микроэлектроники РАН</h3>
               <p class="card__details">Идёт процесс ликвидации с 25.10.2019 по 10.10.2020</p>
               <p class="card__head">Директор: Сауров Александр Николаевич</p>
               <p class="card__document">Трудовой контракт с 25.03.2017 по 25.03.2023</p>
-              <p class="card__contacts">119991, Москва, Ленинский просп., 32а</p>
-              <p class="card__contacts">123 сотрудника</p>
-              <h3 class="card__title">Наименование организации до реорганизации</h3>
-              <p class="card__old-title">ФГБУН науки Объединенный институт высоких температур РАН</p>
-              <p class="card__old-title">ФГБУН Институт проблем управления сложными системами РАН</p>
+              <p class="card__contacts card__contacts--address">119991, Москва, Ленинский просп., 32а</p>
+              <p class="card__contacts card__contacts--staff">123 сотрудника</p>
+              <h3 class="card__title card__title--old">Наименование организации до реорганизации</h3>
+              <p class="card__old-title card__old-title--icon">ФГБУН науки Объединенный институт высоких температур РАН</p>
+              <p class="card__old-title card__old-title--icon">ФГБУН Институт проблем управления сложными системами РАН</p>
             </li>
-            <li class="cards__item card">
+            <li class="cards__item card card--open-arrow">
               <h3 class="card__title">ФГБУН Институт нанотехнологий микроэлектроники РАН</h3>
               <p class="card__details">Идёт процесс ликвидации с 25.10.2019 по 10.10.2020</p>
               <p class="card__head">Директор: Сауров Александр Николаевич</p>
               <p class="card__document">Трудовой контракт с 25.03.2017 по 25.03.2023</p>
-              <p class="card__contacts">119991, Москва, Ленинский просп., 32а</p>
-              <p class="card__contacts">123 сотрудника</p>
+              <p class="card__contacts card__contacts--address">119991, Москва, Ленинский просп., 32а</p>
+              <p class="card__contacts card__contacts--staff">123 сотрудника</p>
             </li>
           </ul>
         </div>
@@ -175,37 +175,37 @@
           </div>
           <div class="cards__wrapper">
             <form class="form">
-              <fieldset class="form__fieldset">
+              <fieldset class="form__fieldset form__fieldset--testing">
                 <label class="form__label" for="text-area">Решение о проведении поверки</label>
                 <textarea class="form__input" id="text-area" name="text-area" placeholder="Введите текст"></textarea>
               </fieldset>
-              <fieldset class="form__fieldset">
+              <fieldset class="form__fieldset form__fieldset--information">
                 <ul class="form__list">
                   <li class="form__item">
                     <label class="form__label" for="organization">Организация</label>
                     <input class="form__input" name="organization" id="organization" type="text" placeholder="ООО “РесерчХолд”">
                   </li>
                   <li class="form__item">
-                    <label class="form__label" for="type">Вид проверки</label>
+                    <label class="form__label form__label--select" for="type">Вид проверки</label>
                     <select class="form__select" id="type">
                       <option>Плановая</option>
                     </select>
                   </li>
                   <li class="form__item">
-                    <label class="form__label" for="form">Форма проверки</label>
+                    <label class="form__label form__label--select" for="form">Форма проверки</label>
                     <select class="form__select" id="form">
                       <option>Выездная</option>
                     </select>
                   </li>
                   <li class="form__item">
-                    <label class="form__label" for="method">Метод проверки</label>
+                    <label class="form__label form__label--select" for="method">Метод проверки</label>
                     <select class="form__select" id="method">
                       <option>Фактическая</option>
                     </select>
                   </li>
                   <li class="form__item">
-                    <label class="form__label" for="time">Сроки проведения проверки</label>
-                    <input class="form__input" id="time" type="text" placeholder="02.08.2020 - 05.08.2020 ">
+                    <label class="form__label form__label--select" for="time">Сроки проведения проверки</label>
+                    <input class="form__input form__input--time" id="time" type="text" placeholder="02.08.2020 - 05.08.2020 ">
                   </li>
                   <li class="form__item">
                     <label class="form__label" for="place">Место проведения проверки</label>
@@ -213,7 +213,9 @@
                   </li>
                 </ul>
               </fieldset>
-              <button class="button button--action" type="submit">Написать</button>
+              <div class="form__button-wrapper">
+                <button class="button button--action" type="submit">Написать</button>
+              </div>
             </form>
           </div>
         </div>
