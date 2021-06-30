@@ -1,118 +1,83 @@
 .card {
-  position: relative;
-  border-top: 1px solid $dark-blue;
-  padding: 25px 20px;
+  background-color: $dark-violet;
+  box-shadow: 7px 7px 8px $lighter-black;
+  border-radius: 18px;
 
-  &--open-arrow::before,
-  &--close-arrow::before {
-    position: absolute;
-    content: "";
-    width: 13px;
-    height: 7px;
-    top: 30px;
-    right: 25px;
-    background-repeat: no-repeat;
+  &--index {
+    height: 100%;
+    padding: 25px 20px 17px 20px;
   }
 
-  &--open-arrow::before {
-    background-image: url("../img/icon-open-arrow.svg");
+  &--report {
+    display: flex;
+    justify-content: space-between;
   }
 
-  &--close-arrow::before {
-    background-image: url("../img/icon-close-arrow.svg");
-  }
-
-  &--close-arrow::after {
-    position: absolute;
-    content: "";
-    width: 24px;
-    height: 24px;
-    top: 60px;
-    right: 20px;
-    background-repeat: no-repeat;
-    background-image: url("../img/icon-file.svg");
+  &--rent {
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 11px;
   }
 }
 
 .card__title {
   margin: 0;
+  padding: 25px 20px;
   font-size: 14px;
   line-height: 19px;
   font-weight: 700;
   color: $white;
-
-  &--old {
-    margin-top: 32px;
-  }
 }
 
-.card__details {
-  margin: 0;
-  font-weight: 300;
-  color: $pink;
+.card__list-wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
-.card__old-title {
-  position: relative;
-  margin-top: 11px;
-  margin-bottom: 0;
-  padding-left: 23px;
-  font-size: 14px;
-  line-height: 19px;
-  color: $light-violet;
-
-  &--icon::before {
-    position: absolute;
-    content: "";
-    width: 16px;
-    height: 16px;
-    top: 0;
-    left: 0;
-    background-image: url("../img/icon-old-title.svg");
-    background-repeat: no-repeat;
-  }
-}
-
-.card__head {
-  margin-top: 21px;
-  margin-bottom: 2px;
-  font-size: 14px;
-  line-height: 19px;
-}
-
-.card__document {
-  margin-top: 0;
-  margin-bottom: 30px;
-}
-
-.card__contacts-list {
+.card__list {
   @include reset-list;
+  color: $white;
 }
 
-.card__contacts {
-  position: relative;
-  padding-left: 23px;
+.card__heading-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card__heading {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $white;
+}
+
+.card__text {
+  margin-bottom: 0;
   font-size: 14px;
   line-height: 19px;
+  color: $white;
+}
 
-  &--address::before,
-  &--staff::before {
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-  }
+.card__link {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: $blue;
+}
 
-  &--address::before {
-    width: 17px;
-    height: 17px;
-    background-image: url("../img/icon-address.svg");
-  }
+.card__helper-rent {
+  margin-top: 25px;
+  margin-bottom: 26px;
+  margin-right: 22px;
+}
 
-  &--staff::before {
-    width: 16px;
-    height: 16px;
-    background-image: url("../img/icon-card-staff.svg");
-  }
+.card__img-wrapper--field {
+  text-align: right;
+}
+
+.card__img-wrapper--map {
+  margin-left: 20px;
 }

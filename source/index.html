@@ -119,103 +119,146 @@
           </button>
         </div>
       </div>
-      <div class="cards cards--index">
-        <div class="cards__block">
-          <div class="cards__wrapper">
-            <h2 class="cards__heading">Работа с полями</h2>
+      <div class="container">
+        <div class="grid">
+          <div class="grid__item grid__item--index">
+            <div class="card card--index">
+              <h2 class="card__heading">Работа с полями</h2>
+              <div class="card__img-wrapper card__img-wrapper--field">
+                <img src="img/field-picture.svg" alt="Разноцветная иконка с полями и колоском">
+              </div>
+            </div>
           </div>
-          <div class="cards__wrapper">
-            <h2 class="cards__heading">Статистика урожая</h2>
-            <p>Поволжье</p>
+          <div class="grid__item grid__item--index">
+            <div class="card card--index">
+              <h2 class="card__heading">Статистика урожая</h2>
+              <p class="card__text">Поволжье</p>
+              <div class="card__img-wrapper card__img-wrapper--map">
+                <img src="img/map.svg" alt="Схематичная карта РФ">
+              </div>
+            </div>
           </div>
-          <div class="cards__wrapper">
-            <h2 class="cards__heading">Погода в Курской области</h2>
-            <p>28.08.2020</p>
-            <p>Среда</p>
-            <p>
-              <span>+28</span>
-              <span>℃</span>
-            </p>
-            <p>750 мм рт. ст.</p>
-            <p>3,5 м/с</p>
-            <p>Солнечно</p>
-            <p>Осадки 7%</p>
-          </div>
-        </div>
-        <div class="cards__block">
-          <div class="cards__wrapper">
-            <h2 class="cards__heading">Отчёты и статистика </h2>
-            <table>
-              <thead>
-              <tr>
-                <th scope="col">2020 год</th>
-                <th scope="col">2019 год</th>
-                <th scope="col">2018 год</th>
-              </tr>
-              </thead>
-              <tbody>
-              <tr>
-                <td>123 000 000</td>
-                <td>90 568 666</td>
-                <td>200 568 666</td>
-              </tr>
-              <tr>
-                <td>123 587 569</td>
-                <td>123 587 569</td>
-                <td>123 587 569</td>
-              </tr>
-              <tr>
-                <td>258 654 588</td>
-                <td>258 654 588</td>
-                <td>258 654 588</td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-          <div class="cards__wrapper">
-            <h2 class="cards__heading">Сотрудники</h2>
-            <ul>
-              <li>
-                <p>Иванов Иван Иванович</p>
-                <p>Заместитель</p>
-              </li>
-              <li>
-                <p>Константинов Иван Иванович</p>
-                <p>Секретарь</p>
-              </li>
-            </ul>
-            <a>Показать еще</a>
+          <div class="grid__item grid__item--index">
+            <div class="card card--index">
+              <h2 class="card__heading">Погода в Курской области</h2>
+              <ul class="card__list weather">
+                <li class="weather__item weather__item--data">
+                  <p class="weather__text">28.08.2020</p>
+                  <p class="weather__text">Среда</p>
+                </li>
+                <li class="weather__item weather__item--data">
+                  <span class="weather__temperature">+28</span>
+                  <sup class="weather__degree">&deg;C</sup>
+                </li>
+              </ul>
+              <ul class="card__list weather">
+                <li class="weather__item">
+                  <p class="weather__description">750 мм рт. ст.</p>
+                  <p class="weather__description">3,5 м/с</p>
+                </li>
+                <li class="weather__item">
+                  <p class="weather__description">Солнечно</p>
+                  <p class="weather__description">Осадки 7%</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="cards__block">
-          <div class="cards__wrapper">
-            <h2 class="cards__heading">Статистика пшена на полях ЦАО</h2>
-            <ul>
-              <li>
-                <h4>Урожай 2020</h4>
-                <p>15 150 000 тонн</p>
-                <p>120 областей</p>
-              </li>
-              <li>
-                <h4>Урожай 2019</h4>
-                <p>102 650 980 тонн</p>
-                <p>250 областей</p>
-              </li>
-            </ul>
-            <a>По годам</a>
+        <div class="grid">
+          <div class="grid__item grid__item--big">
+            <div class="card card--index card--report">
+              <div class="card__table-helper">
+                <h2 class="card__heading">Отчёты и статистика </h2>
+                <table class="table-index">
+                  <thead>
+                  <tr>
+                    <th scope="col">2020 год</th>
+                    <th scope="col">2019 год</th>
+                    <th scope="col">2018 год</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>123 000 000</td>
+                    <td>90 568 666</td>
+                    <td>200 568 666</td>
+                  </tr>
+                  <tr>
+                    <td>123 587 569</td>
+                    <td>123 587 569</td>
+                    <td>123 587 569</td>
+                  </tr>
+                  <tr>
+                    <td>258 654 588</td>
+                    <td>258 654 588</td>
+                    <td>258 654 588</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <img src="img/chart-bar.svg" alt="Вертикальные графики">
+            </div>
           </div>
-          <div class="cards__wrapper">
-            <h2 class="cards__heading">Арендуемая техника</h2>
-            <p>ООО “Магнат Мед”</p>
-            <ul>
-              <li>
-                <h4>Экскаваторы 2020</h4>
-                <p>15 100 машин</p>
-                <p>130 областей</p>
-                <p>5 предприятий</p>
-              </li>
-            </ul>
-            <a>Добавить технику</a>
+          <div class="grid__item grid__item--index">
+            <div class="card card--index">
+              <h2 class="card__heading">Сотрудники</h2>
+              <ul class="card__list contacts">
+                <li class="contacts__item contacts__item--phone contacts__item--mail">
+                  <p class="contacts__name">Иванов Иван Иванович</p>
+                  <p class="contacts__description">Заместитель</p>
+                </li>
+                <li class="contacts__item contacts__item--phone contacts__item--mail">
+                  <p class="contacts__name">Константинов Иван Иванович</p>
+                  <p class="contacts__description">Секретарь</p>
+                </li>
+              </ul>
+              <a class="card__link">Показать еще</a>
+            </div>
+          </div>
+        </div>
+        <div class="grid">
+          <div class="grid__item grid__item--half">
+            <div class="card card--index">
+              <div class="card__heading-wrapper">
+                <h2 class="card__heading">Статистика пшена на полях ЦАО</h2>
+                <a class="card__link">По годам</a>
+              </div>
+              <div class="card__list-wrapper">
+                <ul class="card__list statistic">
+                  <li class="statistic__item">
+                    <h4 class="statistic__title">Урожай 2020</h4>
+                    <p class="statistic__text">15 150 000 тонн</p>
+                    <p class="statistic__text">120 областей</p>
+                  </li>
+                  <li class="statistic__item">
+                    <h4 class="statistic__title">Урожай 2019</h4>
+                    <p class="statistic__text">102 650 980 тонн</p>
+                    <p class="statistic__text">250 областей</p>
+                  </li>
+                </ul>
+                <img src="img/chart-pie.svg" alt="Круговая диаграмма">
+              </div>
+            </div>
+          </div>
+          <div class="grid__item grid__item--half">
+            <div class="card card--index card--rent">
+              <div class="card__helper-rent">
+                <h2 class="card__heading">Арендуемая техника</h2>
+                <p class="card__text">ООО “Магнат Мед”</p>
+                <ul class="card__list statistic statistic--rent">
+                  <li class="statistic__item statistic__item--rent">
+                    <h4 class="statistic__title">Экскаваторы 2020</h4>
+                    <p class="statistic__text">15 100 машин</p>
+                    <p class="statistic__text">130 областей</p>
+                    <p class="statistic__text">5 предприятий</p>
+                  </li>
+                </ul>
+                <a class="card__link">Добавить технику</a>
+              </div>
+              <div>
+                <img src="img/chart-line.svg" alt="Линейный график" width="295" height="270">
+              </div>
+            </div>
           </div>
         </div>
       </div>
