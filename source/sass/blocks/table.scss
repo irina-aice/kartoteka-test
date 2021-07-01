@@ -1,4 +1,5 @@
 .table {
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -34,6 +35,14 @@
   padding: 16px 29px 18px;
   border-left: 0.5px solid $light-black;
 
+  &:nth-child(3) {
+    padding-right: 5px;
+  }
+
+  &:nth-child(4) {
+    padding-right: 5px;
+  }
+
   &:last-child {
     padding-left: 11px;
     padding-right: 20px;
@@ -55,7 +64,9 @@
   position: absolute;
   width: 17px;
   height: 19px;
-  top: 16px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
   left: 0;
   background-repeat: no-repeat;
 }
@@ -70,4 +81,24 @@
 
 .table__icon--blue::before {
   background-image: url("../img/icon-org-blue.svg");
+}
+
+.table__title {
+  width: 22%;
+}
+
+.table__inn {
+  width: 10%;
+}
+
+.table__fio {
+  width: 23%;
+}
+
+.table__address {
+  width: 41%;
+}
+
+.table__action {
+  width: 4%;
 }

@@ -14,7 +14,6 @@
   }
 
   &--rent {
-    display: flex;
     padding-top: 0;
     padding-bottom: 0;
     padding-right: 11px;
@@ -52,6 +51,10 @@
   line-height: 26px;
   font-weight: 700;
   color: $white;
+
+  &--rent {
+    padding-top: 25px;
+  }
 }
 
 .card__text {
@@ -62,14 +65,34 @@
 }
 
 .card__link {
+  position: relative;
   font-weight: 600;
   font-size: 14px;
   line-height: 19px;
   color: $blue;
 }
 
+.card__link--statistic {
+  padding-right: 26px;
+}
+
+
+.card__link--statistic::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 22px;
+  height: 21px;
+  background-image: url("../img/icon-blue-arrow.svg");
+  background-repeat: no-repeat;
+}
+
+.card__wrapper-rent {
+  display: flex;
+}
+
 .card__helper-rent {
-  margin-top: 25px;
   margin-bottom: 26px;
   margin-right: 22px;
 }

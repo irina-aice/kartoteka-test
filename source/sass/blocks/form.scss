@@ -1,3 +1,7 @@
+.form--search {
+  display: flex;
+}
+
 .form--events {
   margin-top: 26px;
 }
@@ -24,6 +28,24 @@
   margin-bottom: 17px;
 }
 
+.form__wrapper {
+  position: relative;
+  margin-right: 26px;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 10px;
+    bottom: 0;
+    margin: auto;
+    width: 13px;
+    height: 16px;
+    background-image: url("../img/filter.svg");
+    background-repeat: no-repeat;
+  }
+}
+
 .form__label {
   display: inline-block;
   margin-bottom: 6px;
@@ -48,7 +70,10 @@
   border-radius: 5px;
 
   &--search {
-    margin-right: 26px;
+    height: 36px;
+    line-height: 36px;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
   &--time {

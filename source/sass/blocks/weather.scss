@@ -1,21 +1,40 @@
 .weather {
   display: flex;
+
+  &--characteristics {
+    margin-top: 11px;
+  }
 }
 
-.weather__item--data + .weather__item--data {
+.weather__item--date + .weather__item--date {
   margin-left: 39px;
 }
 
+.weather__item--characteristics + .weather__item--characteristics {
+  margin-left: 68px;
+}
+
 .weather__text {
+  margin: 0;
   font-size: 14px;
   line-height: 19px;
+
+  &--date {
+    padding-top: 53px;
+  }
 }
 
 .weather__description {
+  margin: 0;
   font-size: 14px;
   line-height: 19px;
   color: $light-violet;
 }
+
+.weather__description + .weather__description {
+  margin-top: 6px;
+}
+
 
 .weather__temperature {
   font-size: 80px;
